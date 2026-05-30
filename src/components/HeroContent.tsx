@@ -56,7 +56,7 @@ export const HeroContent: React.FC = () => {
             <div className="relative px-8 sm:px-16 py-4 sm:py-6 bg-white/70 backdrop-blur-lg border border-brand-primary/50 rounded-full shadow-[0_8px_30px_rgba(70,130,180,0.1)] flex items-center justify-center">
               <span className="relative text-2xl sm:text-4xl font-serif text-brand-primary tracking-[0.3em] font-medium drop-shadow-sm flex items-center gap-4">
                 <Sparkles className="w-4 h-4 text-brand-primary-light" />
-                11 . 06 . 2026
+                11 . 09 . 2026
                 <Sparkles className="w-4 h-4 text-brand-primary-light" />
               </span>
             </div>

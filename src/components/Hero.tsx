@@ -64,7 +64,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 2.2, duration: 1 }}
           >
-            11 . 06 . 2026
+            11 . 09 . 2026
           </motion.p>
           <motion.span
             className="text-[9px] sm:text-[10px] uppercase tracking-[0.4em] text-white/90 font-medium mt-10 block drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"

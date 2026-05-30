@@ -6,9 +6,9 @@
   --font-sans: "Inter", sans-serif;
   --font-display: "Cormorant Garamond", serif;
 
-  --color-brand-gold: #D4AF37;
-  --color-brand-gold-light: #F9E27D;
-  --color-brand-gold-deep: #B8860B;
+  --color-brand-silver: #C0C0C0; /* Silver */
+  --color-brand-silver-light: #E2E8F0; /* Light Silver / Platinum */
+  --color-brand-silver-deep: #94A3B8; /* Deep Silver / Slate-Grey */
   
   --color-brand-primary: #4682B4; /* Steel Blue */
   --color-brand-primary-light: #B0C4DE; /* Light Steel Blue */
@@ -44,12 +44,12 @@
     @apply bg-white/40 backdrop-blur-md border border-white/20 shadow-xl;
   }
 
-  .text-gradient-gold {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-gold-deep via-brand-gold to-brand-gold-deep;
+  .text-gradient-silver {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-silver-deep via-brand-silver to-brand-silver-deep;
   }
 
-  .border-gold {
-    @apply border border-brand-gold/30;
+  .border-silver {
+    @apply border border-brand-silver/30;
   }
 
   .perspective-1000 {

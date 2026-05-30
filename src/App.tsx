@@ -12,7 +12,6 @@ import { Location } from './components/Location';
 import { RSVPForm } from './components/RSVPForm';
 import { Footer } from './components/Footer';
 import { IntroVideo } from './components/IntroVideo';
-import { Gallery } from './components/Gallery';
 import { HeroContent } from './components/HeroContent';
 import { CornerFlowers } from './components/CornerFlowers';
 
@@ -22,7 +21,7 @@ export default function App() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const weddingDate = new Date('2026-08-20T09:51:00');
+  const weddingDate = new Date('2026-06-11T10:00:00');
 
   const startMusic = () => {
     if (audioRef.current && !isMusicPlaying) {
@@ -43,7 +42,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen font-sans selection:bg-brand-gold selection:text-white overflow-x-hidden bg-brand-ivory">
+    <div className="relative min-h-screen font-sans selection:bg-brand-silver selection:text-white overflow-x-hidden bg-brand-ivory">
       <FloatingPetals />
       
       {/* Background Music */}
@@ -67,9 +66,9 @@ export default function App() {
             {/* Music Toggle Button */}
             <button
               onClick={toggleMusic}
-              className="fixed bottom-8 right-8 z-[60] w-14 h-14 glass rounded-full flex items-center justify-center text-brand-gold-deep hover:bg-stone-800 hover:text-brand-champagne transition-all active:scale-90 shadow-2xl group"
+              className="fixed bottom-8 right-8 z-[60] w-14 h-14 glass rounded-full flex items-center justify-center text-brand-silver-deep hover:bg-stone-800 hover:text-brand-champagne transition-all active:scale-90 shadow-2xl group"
             >
-              <div className="absolute inset-0 rounded-full border border-brand-gold/20 scale-110 group-hover:scale-125 transition-transform" />
+              <div className="absolute inset-0 rounded-full border border-brand-silver/20 scale-110 group-hover:scale-125 transition-transform" />
               {isMusicPlaying ? <Volume2 className="w-6 h-6" /> : <VolumeX className="w-6 h-6" />}
             </button>
 
@@ -96,7 +95,7 @@ export default function App() {
                 </div>
                 
                 <h2 className="text-5xl sm:text-7xl font-display text-white tracking-tight mb-6 drop-shadow-sm">
-                  Until We Say <span className="italic text-brand-primary-light font-light">"I Do"</span>
+                  Until We <span className="italic text-brand-primary-light font-light">Exchange Rings</span>
                 </h2>
                 
                 <p className="text-lg sm:text-xl font-serif italic text-blue-100/80 mb-12 sm:mb-16 max-w-2xl text-center leading-relaxed">
@@ -122,9 +121,7 @@ export default function App() {
 
             {/* Timeline section removed entirely as requested */}
 
-            <section id="gallery" className="bg-brand-ivory">
-              <Gallery />
-            </section>
+
 
             <section id="location" className="py-16 sm:py-32 bg-gradient-to-br from-[#1D3557] to-[#2C3E50] relative overflow-hidden">
               <CornerFlowers position="bottom-left" opacity={0.4} scale={1.2} />

@@ -3,9 +3,9 @@ import { motion } from 'motion/react';
 import { MapPin, Navigation, Compass, Map } from 'lucide-react';
 
 export const Location: React.FC = () => {
-   const venueAddress = "Waters Edge, Battaramulla";
-  const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8443924765634!2d79.9168925!3d6.9056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2597405e3e60d%3A0xc07a81080344d183!2sWaters%20Edge!5e0!3m2!1sen!2slk!4v1714736345678!5m2!1sen!2slk`;
-  const liveLocationUrl = "https://maps.app.goo.gl/uXpD3Bf4s4FmS8yJ6";
+   const venueAddress = "Cinnamon Lakeside, Colombo";
+  const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6768838665685!2d79.8492962!3d6.9291704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593d26d456bf%3A0x972513b2d44939c8!2sCinnamon+Lakeside+Colombo!5e0!3m2!1sen!2slk!4v1716380000000!5m2!1sen!2slk`;
+  const liveLocationUrl = "https://maps.app.goo.gl/LK71rfGahZhhRvM76";
 
   return (
     <div className="max-w-[85rem] mx-auto px-6 relative py-12">
@@ -45,8 +45,8 @@ export const Location: React.FC = () => {
                   <MapPin className="text-brand-primary-light w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-2xl font-serif text-white mb-1">Waters Edge</p>
-                  <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-blue-100/60 leading-relaxed mb-6">Battaramulla, Sri Lanka</p>
+                  <p className="text-2xl font-serif text-white mb-1">Cinnamon Lakeside</p>
+                  <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-blue-100/60 leading-relaxed mb-6">Colombo, Sri Lanka</p>
 
                   <p className="text-blue-100/80 italic font-serif text-lg leading-relaxed max-w-sm mb-10 pl-4 border-l-[1.5px] border-brand-primary-light/40">
                     "A serene and elegant setting where we will begin our new chapter together."
@@ -66,7 +66,7 @@ export const Location: React.FC = () => {
             </div>
 
             {/* Faint background compass icon */}
-            <Compass className="absolute -bottom-16 -right-16 w-64 h-64 text-brand-gold/5 rotate-12 group-hover:rotate-45 transition-transform duration-[3s]" />
+            <Compass className="absolute -bottom-16 -right-16 w-64 h-64 text-brand-silver/5 rotate-12 group-hover:rotate-45 transition-transform duration-[3s]" />
           </div>
         </motion.div>
 
@@ -78,14 +78,14 @@ export const Location: React.FC = () => {
           transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
           className="w-full lg:w-[65%] h-[500px] sm:h-[600px] lg:h-[700px] relative z-10"
         >
-          <div className="absolute -inset-4 sm:-inset-6 border-[2px] border-brand-gold/30 rounded-[3rem] -z-10 translate-x-2 sm:translate-x-4 translate-y-2 sm:translate-y-4" />
+          <div className="absolute -inset-4 sm:-inset-6 border-[2px] border-brand-silver/30 rounded-[3rem] -z-10 translate-x-2 sm:translate-x-4 translate-y-2 sm:translate-y-4" />
 
           <div className="w-full h-full rounded-[2.5rem] lg:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)] border-[8px] sm:border-[12px] border-white relative group/map">
             {/* Map Placeholder Masking for premium feel */}
-            <div className="absolute inset-0 bg-brand-gold/10 mix-blend-multiply pointer-events-none z-20 group-hover/map:opacity-0 transition-opacity duration-1000" />
+            <div className="absolute inset-0 bg-brand-silver/10 mix-blend-multiply pointer-events-none z-20 group-hover/map:opacity-0 transition-opacity duration-1000" />
 
             <iframe
-              title="Marino Beach Location"
+              title="Cinnamon Lakeside Location"
               src={mapUrl}
               width="100%"
               height="100%"
@@ -97,8 +97,8 @@ export const Location: React.FC = () => {
             />
 
             {/* Decorative Location Pin Overlay */}
-            <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-brand-gold/30 shadow-lg flex items-center gap-2 pointer-events-none z-30">
-              <Map className="w-4 h-4 text-brand-gold-deep animate-pulse" />
+            <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-brand-silver/30 shadow-lg flex items-center gap-2 pointer-events-none z-30">
+              <Map className="w-4 h-4 text-brand-silver-deep animate-pulse" />
               <span className="text-[9px] uppercase tracking-widest font-bold text-stone-600">Live Map</span>
             </div>
           </div>

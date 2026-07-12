@@ -8,6 +8,7 @@ import { CheckCircle, Loader2, Heart, Sparkles } from 'lucide-react';
 export const RSVPForm: React.FC = () => {
   const [formData, setFormData] = useState({
     fullName: '',
+    phoneNumber: '',
     guests: '1',
     dietaryNotes: '',
   });
@@ -22,6 +23,7 @@ export const RSVPForm: React.FC = () => {
     try {
       await submitToGoogleSheet('rsvp', {
         fullName: formData.fullName,
+        phoneNumber: formData.phoneNumber,
         guests: normalizedGuests,
         dietaryNotes: formData.dietaryNotes,
         submittedAt: new Date().toISOString(),
@@ -39,7 +41,7 @@ export const RSVPForm: React.FC = () => {
       }
 
       setStatus('success');
-      setFormData({ fullName: '', guests: '1', dietaryNotes: '' });
+      setFormData({ fullName: '', phoneNumber: '', guests: '1', dietaryNotes: '' });
     } catch (error) {
       console.error('Error sending RSVP to Google Sheets: ', error);
       setStatus('error');
@@ -125,6 +127,18 @@ export const RSVPForm: React.FC = () => {
                     className="w-full bg-white/80 px-6 py-4 rounded-full border border-stone-200/60 focus:ring-2 focus:ring-brand-primary/30 focus:border-brand-primary-light/40 outline-none transition-all duration-300 font-serif italic text-lg shadow-inner placeholder:text-stone-300"
                     value={formData.fullName}
                     onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-3 ml-2">Phone Number</label>
+                  <input
+                    required
+                    type="tel"
+                    placeholder="E.g., +94 77 123 4567"
+                    className="w-full bg-white/80 px-6 py-4 rounded-full border border-stone-200/60 focus:ring-2 focus:ring-brand-primary/30 focus:border-brand-primary-light/40 outline-none transition-all duration-300 font-serif italic text-lg shadow-inner placeholder:text-stone-300"
+                    value={formData.phoneNumber}
+                    onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
                   />
                 </div>
 

@@ -46,7 +46,7 @@ function ensureHeaders(sheetKey, sheet) {
   }
 
   if (sheetKey === 'rsvp') {
-    sheet.appendRow(['Timestamp', 'Full Name', 'Guests', 'Dietary Notes', 'Submitted At (ISO)']);
+    sheet.appendRow(['Timestamp', 'Full Name', 'Phone Number', 'Guests', 'Dietary Notes', 'Submitted At (ISO)']);
     return;
   }
 
@@ -62,6 +62,7 @@ function buildRow(sheetKey, payload) {
     return [
       now,
       sanitize(payload.fullName),
+      sanitize(payload.phoneNumber),
       Number(payload.guests || 1),
       sanitize(payload.dietaryNotes),
       sanitize(payload.submittedAt),

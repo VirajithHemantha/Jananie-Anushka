@@ -91,7 +91,7 @@ export const CeremonyDetails: React.FC = () => {
 
             <h3 className="font-display text-3xl sm:text-4xl text-stone-800 mb-4 tracking-tight">The Reception</h3>
             <p className="text-stone-500/90 font-serif text-base sm:text-lg leading-relaxed mb-8">
-              Followed by a celebratory lunch and afternoon festivities in the Grand Ballroom of Cinnamon Lakeside.
+              Followed by a celebratory lunch in the Dukes Court of Cinnamon Lakeside.
             </p>
             <div className="inline-block px-5 py-2.5 bg-brand-primary/10 rounded-full border border-brand-primary/30 shadow-sm">
               <span className="text-brand-primary font-sans font-bold tracking-[0.2em] text-[11px] uppercase block drop-shadow-sm">11:00 AM - 03:00 PM</span>

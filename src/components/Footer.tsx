@@ -51,6 +51,19 @@ export const Footer: React.FC = () => {
           <div className="text-[9px] text-stone-300 tracking-widest uppercase font-medium">
             © 2026 Jananie & Anushka Engagement
           </div>
+          
+          <div className="text-[10px] sm:text-xs text-stone-400 font-medium mt-2 flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
+            <span>Designed by Invitemint</span>
+            <span className="hidden sm:inline">|</span>
+            <a 
+              href="https://wa.me/94707819074" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-brand-primary transition-colors hover:underline"
+            >
+              WhatsApp +94 70 781 9074
+            </a>
+          </div>
         </div>
       </div>
     </footer>
